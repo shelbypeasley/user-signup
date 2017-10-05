@@ -22,7 +22,7 @@ def welcome():
 @app.route("/")
 def index():
     error = request.args.get("error")
-    return render_template('index.html',username=username, error=error and cgi.escape(error, quote=true))
+    return render_template('index.html', error=error and cgi.escape(error, quote=true))
 
 if __name__ == "__main__":
     app.run()
