@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1>Signup</h1>
-        <form method="post">
+        <form method="POST">
             <table>
                 <tbody>
                     <tr>
@@ -15,8 +15,8 @@
                             <label for="username">Username</label>
                         </td>
                         <td>
-                            <input name="username" value="" type="text">
-                            <span class="error"></span>
+                            <input name="username" value="{{ username }}" type="text">
+                            <span class="error">{{ error1 }}</span>
                         </td>
                     </tr>
                     <tr>
@@ -25,7 +25,7 @@
                         </td>
                         <td>
                             <input name="password" type="password">
-                            <span class="error"></span>
+                            <span class="error">{{ error2 }}</span>
                         </td>
                     </tr>
                     <tr>
@@ -34,7 +34,7 @@
                         </td>
                         <td>
                             <input name="verify" type="password">
-                            <span class="error"></span>
+                            <span class="error">{{ error3 }}</span>
                         </td>
                     </tr>
                     <tr>
@@ -42,8 +42,8 @@
                             <label for="email">Email (optional)</label>
                         </td>
                         <td>
-                            <input name="email" value="">
-                            <span class="error"></span>
+                            <input name="email" value="{{ email }}">
+                            <span class="error">{{ error4 }}</span>
                         </td>
                     </tr>
                 </tbody>
